@@ -1,7 +1,14 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+.main {
+  background-color: #fff;
 
-body {
-  background: $c-gray;
+  &__content {
+    display: grid;
+    row-gap: 100px;
+    padding-block: 100px;
+
+    @include onTablet {
+      row-gap: 140px;
+      padding-block: 140px;
+    }
+  }
 }
